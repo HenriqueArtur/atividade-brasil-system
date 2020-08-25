@@ -3342,3 +3342,441 @@ Processing by UsersController#index as HTML
 Completed 200 OK in 30ms (Views: 27.8ms | ActiveRecord: 0.4ms)
 
 
+Started GET "/users" for 127.0.0.1 at 2020-08-25 15:11:06 -0300
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/bs-1/.rvm/gems/ruby-2.5.7/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+Processing by UsersController#index as HTML
+[ActiveJob] Enqueued AddUserJob (Job ID: e998d7ac-4bc3-4009-8d01-8e684ffcd56e) to Async(default)
+[ActiveJob] [AddUserJob] [e998d7ac-4bc3-4009-8d01-8e684ffcd56e] Performing AddUserJob (Job ID: e998d7ac-4bc3-4009-8d01-8e684ffcd56e) from Async(default)
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:16
+  Rendered users/index.html.erb within layouts/application (17.1ms)
+Completed 200 OK in 286ms (Views: 252.8ms | ActiveRecord: 4.7ms)
+
+
+[ActiveJob] [AddUserJob] [e998d7ac-4bc3-4009-8d01-8e684ffcd56e] Performed AddUserJob (Job ID: e998d7ac-4bc3-4009-8d01-8e684ffcd56e) from Async(default) in 20001.7ms
+Started GET "/users" for 127.0.0.1 at 2020-08-25 15:24:45 -0300
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/bs-1/.rvm/gems/ruby-2.5.7/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:16
+  Rendered users/index.html.erb within layouts/application (17.5ms)
+Completed 200 OK in 300ms (Views: 282.8ms | ActiveRecord: 5.3ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2020-08-25 15:26:49 -0300
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/bs-1/.rvm/gems/ruby-2.5.7/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+Processing by UsersController#index as HTML
+[ActiveJob] Enqueued AddUserJob (Job ID: a47f94c6-19e3-49fc-bd6d-d5e1ed2e95f5) to Async(default)
+  Rendering users/index.html.erb within layouts/application
+[ActiveJob] [AddUserJob] [a47f94c6-19e3-49fc-bd6d-d5e1ed2e95f5] Performing AddUserJob (Job ID: a47f94c6-19e3-49fc-bd6d-d5e1ed2e95f5) from Async(default)
+  [1m[36mUser Load (2.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:16
+  Rendered users/index.html.erb within layouts/application (30.9ms)
+Completed 200 OK in 391ms (Views: 357.0ms | ActiveRecord: 8.1ms)
+
+
+[ActiveJob] [AddUserJob] [a47f94c6-19e3-49fc-bd6d-d5e1ed2e95f5] Performed AddUserJob (Job ID: a47f94c6-19e3-49fc-bd6d-d5e1ed2e95f5) from Async(default) in 95027.76ms
+Started GET "/users" for 127.0.0.1 at 2020-08-25 15:44:15 -0300
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/bs-1/.rvm/gems/ruby-2.5.7/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+Processing by UsersController#index as HTML
+Completed 500 Internal Server Error in 13ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/home/bs-1/Documentos/desafio/desafio/app/jobs/add_user_job.rb:22: syntax error, unexpected end-of-input, expecting keyword_end):
+  
+app/jobs/add_user_job.rb:22: syntax error, unexpected end-of-input, expecting keyword_end
+app/controllers/users_controller.rb:9:in `index'
+Started GET "/users" for 127.0.0.1 at 2020-08-25 15:45:12 -0300
+Processing by UsersController#index as HTML
+[ActiveJob] Enqueued AddUserJob (Job ID: 82d43836-8cef-4808-a077-6b8b14014fe7) to Async(default)
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:16
+  Rendered users/index.html.erb within layouts/application (19.3ms)
+Completed 200 OK in 284ms (Views: 259.8ms | ActiveRecord: 5.2ms)
+
+
+[ActiveJob] [AddUserJob] [82d43836-8cef-4808-a077-6b8b14014fe7] Performing AddUserJob (Job ID: 82d43836-8cef-4808-a077-6b8b14014fe7) from Async(default)
+[ActiveJob] [AddUserJob] [82d43836-8cef-4808-a077-6b8b14014fe7]   [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+[ActiveJob] [AddUserJob] [82d43836-8cef-4808-a077-6b8b14014fe7]   ↳ app/jobs/add_user_job.rb:13
+[ActiveJob] [AddUserJob] [82d43836-8cef-4808-a077-6b8b14014fe7]   [1m[36mUser Create (0.5ms)[0m  [1m[32mINSERT INTO "users" ("nome", "email", "idade", "created_at", "updated_at", "tempo") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["nome", "Felipe"], ["email", "[\"henrique@teste.com\", \"felipe@teste.com\", \"tiago@teste.com\"]"], ["idade", 33], ["created_at", "2020-08-25 18:45:12.651356"], ["updated_at", "2020-08-25 18:45:12.651356"], ["tempo", "17:45:12.650470"]]
+[ActiveJob] [AddUserJob] [82d43836-8cef-4808-a077-6b8b14014fe7]   ↳ app/jobs/add_user_job.rb:13
+[ActiveJob] [AddUserJob] [82d43836-8cef-4808-a077-6b8b14014fe7]   [1m[35m (3.2ms)[0m  [1m[35mCOMMIT[0m
+[ActiveJob] [AddUserJob] [82d43836-8cef-4808-a077-6b8b14014fe7]   ↳ app/jobs/add_user_job.rb:13
+[ActiveJob] [AddUserJob] [82d43836-8cef-4808-a077-6b8b14014fe7] Performed AddUserJob (Job ID: 82d43836-8cef-4808-a077-6b8b14014fe7) from Async(default) in 7287.76ms
+Started GET "/users" for 127.0.0.1 at 2020-08-25 15:45:33 -0300
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/bs-1/.rvm/gems/ruby-2.5.7/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+Processing by UsersController#index as HTML
+[ActiveJob] Enqueued AddUserJob (Job ID: 561c96ea-abea-47ee-83ba-e59b7b42608a) to Async(default)
+  Rendering users/index.html.erb within layouts/application
+[ActiveJob] [AddUserJob] [561c96ea-abea-47ee-83ba-e59b7b42608a] Performing AddUserJob (Job ID: 561c96ea-abea-47ee-83ba-e59b7b42608a) from Async(default)
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:16
+  Rendered users/index.html.erb within layouts/application (38.2ms)
+Completed 200 OK in 329ms (Views: 288.9ms | ActiveRecord: 15.9ms)
+
+
+[ActiveJob] [AddUserJob] [561c96ea-abea-47ee-83ba-e59b7b42608a]   [1m[35m (10.0ms)[0m  [1m[35mBEGIN[0m
+[ActiveJob] [AddUserJob] [561c96ea-abea-47ee-83ba-e59b7b42608a]   ↳ app/jobs/add_user_job.rb:13
+[ActiveJob] [AddUserJob] [561c96ea-abea-47ee-83ba-e59b7b42608a]   [1m[36mUser Create (1.1ms)[0m  [1m[32mINSERT INTO "users" ("nome", "email", "idade", "created_at", "updated_at", "tempo") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["nome", "Henrique"], ["email", "[\"henrique@teste.com\", \"felipe@teste.com\", \"tiago@teste.com\"]"], ["idade", 96], ["created_at", "2020-08-25 18:45:33.876506"], ["updated_at", "2020-08-25 18:45:33.876506"], ["tempo", "17:45:33.865572"]]
+[ActiveJob] [AddUserJob] [561c96ea-abea-47ee-83ba-e59b7b42608a]   ↳ app/jobs/add_user_job.rb:13
+[ActiveJob] [AddUserJob] [561c96ea-abea-47ee-83ba-e59b7b42608a]   [1m[35m (8.9ms)[0m  [1m[35mCOMMIT[0m
+[ActiveJob] [AddUserJob] [561c96ea-abea-47ee-83ba-e59b7b42608a]   ↳ app/jobs/add_user_job.rb:13
+[ActiveJob] [AddUserJob] [561c96ea-abea-47ee-83ba-e59b7b42608a]   [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+[ActiveJob] [AddUserJob] [561c96ea-abea-47ee-83ba-e59b7b42608a]   ↳ app/jobs/add_user_job.rb:13
+[ActiveJob] [AddUserJob] [561c96ea-abea-47ee-83ba-e59b7b42608a]   [1m[36mUser Create (0.6ms)[0m  [1m[32mINSERT INTO "users" ("nome", "email", "idade", "created_at", "updated_at", "tempo") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["nome", "Felipe"], ["email", "[\"henrique@teste.com\", \"felipe@teste.com\", \"tiago@teste.com\"]"], ["idade", 95], ["created_at", "2020-08-25 18:45:36.892603"], ["updated_at", "2020-08-25 18:45:36.892603"], ["tempo", "17:45:36.891916"]]
+[ActiveJob] [AddUserJob] [561c96ea-abea-47ee-83ba-e59b7b42608a]   ↳ app/jobs/add_user_job.rb:13
+[ActiveJob] [AddUserJob] [561c96ea-abea-47ee-83ba-e59b7b42608a]   [1m[35m (2.9ms)[0m  [1m[35mCOMMIT[0m
+[ActiveJob] [AddUserJob] [561c96ea-abea-47ee-83ba-e59b7b42608a]   ↳ app/jobs/add_user_job.rb:13
+[ActiveJob] [AddUserJob] [561c96ea-abea-47ee-83ba-e59b7b42608a]   [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+[ActiveJob] [AddUserJob] [561c96ea-abea-47ee-83ba-e59b7b42608a]   ↳ app/jobs/add_user_job.rb:13
+[ActiveJob] [AddUserJob] [561c96ea-abea-47ee-83ba-e59b7b42608a]   [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("nome", "email", "idade", "created_at", "updated_at", "tempo") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["nome", "Henrique"], ["email", "[\"henrique@teste.com\", \"felipe@teste.com\", \"tiago@teste.com\"]"], ["idade", 56], ["created_at", "2020-08-25 18:45:39.900038"], ["updated_at", "2020-08-25 18:45:39.900038"], ["tempo", "17:45:39.899069"]]
+[ActiveJob] [AddUserJob] [561c96ea-abea-47ee-83ba-e59b7b42608a]   ↳ app/jobs/add_user_job.rb:13
+[ActiveJob] [AddUserJob] [561c96ea-abea-47ee-83ba-e59b7b42608a]   [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+[ActiveJob] [AddUserJob] [561c96ea-abea-47ee-83ba-e59b7b42608a]   ↳ app/jobs/add_user_job.rb:13
+[ActiveJob] [AddUserJob] [561c96ea-abea-47ee-83ba-e59b7b42608a]   [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+[ActiveJob] [AddUserJob] [561c96ea-abea-47ee-83ba-e59b7b42608a]   ↳ app/jobs/add_user_job.rb:13
+[ActiveJob] [AddUserJob] [561c96ea-abea-47ee-83ba-e59b7b42608a]   [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("nome", "email", "idade", "created_at", "updated_at", "tempo") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["nome", "Tiago"], ["email", "[\"henrique@teste.com\", \"felipe@teste.com\", \"tiago@teste.com\"]"], ["idade", 17], ["created_at", "2020-08-25 18:45:42.905037"], ["updated_at", "2020-08-25 18:45:42.905037"], ["tempo", "17:45:42.904129"]]
+[ActiveJob] [AddUserJob] [561c96ea-abea-47ee-83ba-e59b7b42608a]   ↳ app/jobs/add_user_job.rb:13
+[ActiveJob] [AddUserJob] [561c96ea-abea-47ee-83ba-e59b7b42608a]   [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+[ActiveJob] [AddUserJob] [561c96ea-abea-47ee-83ba-e59b7b42608a]   ↳ app/jobs/add_user_job.rb:13
+[ActiveJob] [AddUserJob] [561c96ea-abea-47ee-83ba-e59b7b42608a]   [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+[ActiveJob] [AddUserJob] [561c96ea-abea-47ee-83ba-e59b7b42608a]   ↳ app/jobs/add_user_job.rb:13
+[ActiveJob] [AddUserJob] [561c96ea-abea-47ee-83ba-e59b7b42608a]   [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("nome", "email", "idade", "created_at", "updated_at", "tempo") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["nome", "Henrique"], ["email", "[\"henrique@teste.com\", \"felipe@teste.com\", \"tiago@teste.com\"]"], ["idade", 82], ["created_at", "2020-08-25 18:45:45.910445"], ["updated_at", "2020-08-25 18:45:45.910445"], ["tempo", "17:45:45.909508"]]
+[ActiveJob] [AddUserJob] [561c96ea-abea-47ee-83ba-e59b7b42608a]   ↳ app/jobs/add_user_job.rb:13
+[ActiveJob] [AddUserJob] [561c96ea-abea-47ee-83ba-e59b7b42608a]   [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+[ActiveJob] [AddUserJob] [561c96ea-abea-47ee-83ba-e59b7b42608a]   ↳ app/jobs/add_user_job.rb:13
+[ActiveJob] [AddUserJob] [561c96ea-abea-47ee-83ba-e59b7b42608a]   [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+[ActiveJob] [AddUserJob] [561c96ea-abea-47ee-83ba-e59b7b42608a]   ↳ app/jobs/add_user_job.rb:13
+[ActiveJob] [AddUserJob] [561c96ea-abea-47ee-83ba-e59b7b42608a]   [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("nome", "email", "idade", "created_at", "updated_at", "tempo") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["nome", "Tiago"], ["email", "[\"henrique@teste.com\", \"felipe@teste.com\", \"tiago@teste.com\"]"], ["idade", 47], ["created_at", "2020-08-25 18:45:48.915453"], ["updated_at", "2020-08-25 18:45:48.915453"], ["tempo", "17:45:48.914478"]]
+[ActiveJob] [AddUserJob] [561c96ea-abea-47ee-83ba-e59b7b42608a]   ↳ app/jobs/add_user_job.rb:13
+[ActiveJob] [AddUserJob] [561c96ea-abea-47ee-83ba-e59b7b42608a]   [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+[ActiveJob] [AddUserJob] [561c96ea-abea-47ee-83ba-e59b7b42608a]   ↳ app/jobs/add_user_job.rb:13
+[ActiveJob] [AddUserJob] [561c96ea-abea-47ee-83ba-e59b7b42608a]   [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+[ActiveJob] [AddUserJob] [561c96ea-abea-47ee-83ba-e59b7b42608a]   ↳ app/jobs/add_user_job.rb:13
+[ActiveJob] [AddUserJob] [561c96ea-abea-47ee-83ba-e59b7b42608a]   [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("nome", "email", "idade", "created_at", "updated_at", "tempo") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["nome", "Tiago"], ["email", "[\"henrique@teste.com\", \"felipe@teste.com\", \"tiago@teste.com\"]"], ["idade", 4], ["created_at", "2020-08-25 18:45:51.920793"], ["updated_at", "2020-08-25 18:45:51.920793"], ["tempo", "17:45:51.919851"]]
+[ActiveJob] [AddUserJob] [561c96ea-abea-47ee-83ba-e59b7b42608a]   ↳ app/jobs/add_user_job.rb:13
+[ActiveJob] [AddUserJob] [561c96ea-abea-47ee-83ba-e59b7b42608a]   [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+[ActiveJob] [AddUserJob] [561c96ea-abea-47ee-83ba-e59b7b42608a]   ↳ app/jobs/add_user_job.rb:13
+[ActiveJob] [AddUserJob] [561c96ea-abea-47ee-83ba-e59b7b42608a]   [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+[ActiveJob] [AddUserJob] [561c96ea-abea-47ee-83ba-e59b7b42608a]   ↳ app/jobs/add_user_job.rb:13
+[ActiveJob] [AddUserJob] [561c96ea-abea-47ee-83ba-e59b7b42608a]   [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("nome", "email", "idade", "created_at", "updated_at", "tempo") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["nome", "Felipe"], ["email", "[\"henrique@teste.com\", \"felipe@teste.com\", \"tiago@teste.com\"]"], ["idade", 92], ["created_at", "2020-08-25 18:45:54.925708"], ["updated_at", "2020-08-25 18:45:54.925708"], ["tempo", "17:45:54.924738"]]
+[ActiveJob] [AddUserJob] [561c96ea-abea-47ee-83ba-e59b7b42608a]   ↳ app/jobs/add_user_job.rb:13
+[ActiveJob] [AddUserJob] [561c96ea-abea-47ee-83ba-e59b7b42608a]   [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+[ActiveJob] [AddUserJob] [561c96ea-abea-47ee-83ba-e59b7b42608a]   ↳ app/jobs/add_user_job.rb:13
+[ActiveJob] [AddUserJob] [561c96ea-abea-47ee-83ba-e59b7b42608a] Performed AddUserJob (Job ID: 561c96ea-abea-47ee-83ba-e59b7b42608a) from Async(default) in 22607.19ms
+Started GET "/users" for 127.0.0.1 at 2020-08-25 15:47:04 -0300
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/bs-1/.rvm/gems/ruby-2.5.7/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+Processing by UsersController#index as HTML
+[ActiveJob] Enqueued AddUserJob (Job ID: c1bf345f-4e9e-4f3e-9cbd-3c8b3b73b146) to Async(default)
+  Rendering users/index.html.erb within layouts/application
+[ActiveJob] [AddUserJob] [c1bf345f-4e9e-4f3e-9cbd-3c8b3b73b146] Performing AddUserJob (Job ID: c1bf345f-4e9e-4f3e-9cbd-3c8b3b73b146) from Async(default)
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:16
+  Rendered users/index.html.erb within layouts/application (44.0ms)
+Completed 200 OK in 358ms (Views: 332.4ms | ActiveRecord: 3.4ms)
+
+
+[ActiveJob] [AddUserJob] [c1bf345f-4e9e-4f3e-9cbd-3c8b3b73b146]   [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+[ActiveJob] [AddUserJob] [c1bf345f-4e9e-4f3e-9cbd-3c8b3b73b146]   ↳ app/jobs/add_user_job.rb:13
+[ActiveJob] [AddUserJob] [c1bf345f-4e9e-4f3e-9cbd-3c8b3b73b146]   [1m[36mUser Create (3.9ms)[0m  [1m[32mINSERT INTO "users" ("nome", "email", "idade", "created_at", "updated_at", "tempo") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["nome", "Tiago"], ["email", "[\"henrique@teste.com\", \"felipe@teste.com\", \"tiago@teste.com\"]"], ["idade", 37], ["created_at", "2020-08-25 18:47:05.213804"], ["updated_at", "2020-08-25 18:47:05.213804"], ["tempo", "17:47:05.211504"]]
+[ActiveJob] [AddUserJob] [c1bf345f-4e9e-4f3e-9cbd-3c8b3b73b146]   ↳ app/jobs/add_user_job.rb:13
+[ActiveJob] [AddUserJob] [c1bf345f-4e9e-4f3e-9cbd-3c8b3b73b146]   [1m[35m (4.7ms)[0m  [1m[35mCOMMIT[0m
+[ActiveJob] [AddUserJob] [c1bf345f-4e9e-4f3e-9cbd-3c8b3b73b146]   ↳ app/jobs/add_user_job.rb:13
+[ActiveJob] [AddUserJob] [c1bf345f-4e9e-4f3e-9cbd-3c8b3b73b146]   [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+[ActiveJob] [AddUserJob] [c1bf345f-4e9e-4f3e-9cbd-3c8b3b73b146]   ↳ app/jobs/add_user_job.rb:13
+[ActiveJob] [AddUserJob] [c1bf345f-4e9e-4f3e-9cbd-3c8b3b73b146]   [1m[36mUser Create (0.6ms)[0m  [1m[32mINSERT INTO "users" ("nome", "email", "idade", "created_at", "updated_at", "tempo") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["nome", "Henrique"], ["email", "[\"henrique@teste.com\", \"felipe@teste.com\", \"tiago@teste.com\"]"], ["idade", 67], ["created_at", "2020-08-25 18:47:08.231386"], ["updated_at", "2020-08-25 18:47:08.231386"], ["tempo", "17:47:08.230712"]]
+[ActiveJob] [AddUserJob] [c1bf345f-4e9e-4f3e-9cbd-3c8b3b73b146]   ↳ app/jobs/add_user_job.rb:13
+[ActiveJob] [AddUserJob] [c1bf345f-4e9e-4f3e-9cbd-3c8b3b73b146]   [1m[35m (1.6ms)[0m  [1m[35mCOMMIT[0m
+[ActiveJob] [AddUserJob] [c1bf345f-4e9e-4f3e-9cbd-3c8b3b73b146]   ↳ app/jobs/add_user_job.rb:13
+[ActiveJob] [AddUserJob] [c1bf345f-4e9e-4f3e-9cbd-3c8b3b73b146]   [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+[ActiveJob] [AddUserJob] [c1bf345f-4e9e-4f3e-9cbd-3c8b3b73b146]   ↳ app/jobs/add_user_job.rb:13
+[ActiveJob] [AddUserJob] [c1bf345f-4e9e-4f3e-9cbd-3c8b3b73b146]   [1m[36mUser Create (0.8ms)[0m  [1m[32mINSERT INTO "users" ("nome", "email", "idade", "created_at", "updated_at", "tempo") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["nome", "Henrique"], ["email", "[\"henrique@teste.com\", \"felipe@teste.com\", \"tiago@teste.com\"]"], ["idade", 93], ["created_at", "2020-08-25 18:47:11.237848"], ["updated_at", "2020-08-25 18:47:11.237848"], ["tempo", "17:47:11.236944"]]
+[ActiveJob] [AddUserJob] [c1bf345f-4e9e-4f3e-9cbd-3c8b3b73b146]   ↳ app/jobs/add_user_job.rb:13
+[ActiveJob] [AddUserJob] [c1bf345f-4e9e-4f3e-9cbd-3c8b3b73b146]   [1m[35m (1.9ms)[0m  [1m[35mCOMMIT[0m
+[ActiveJob] [AddUserJob] [c1bf345f-4e9e-4f3e-9cbd-3c8b3b73b146]   ↳ app/jobs/add_user_job.rb:13
+[ActiveJob] [AddUserJob] [c1bf345f-4e9e-4f3e-9cbd-3c8b3b73b146]   [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+[ActiveJob] [AddUserJob] [c1bf345f-4e9e-4f3e-9cbd-3c8b3b73b146]   ↳ app/jobs/add_user_job.rb:13
+[ActiveJob] [AddUserJob] [c1bf345f-4e9e-4f3e-9cbd-3c8b3b73b146]   [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("nome", "email", "idade", "created_at", "updated_at", "tempo") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["nome", "Henrique"], ["email", "[\"henrique@teste.com\", \"felipe@teste.com\", \"tiago@teste.com\"]"], ["idade", 51], ["created_at", "2020-08-25 18:47:14.245405"], ["updated_at", "2020-08-25 18:47:14.245405"], ["tempo", "17:47:14.244482"]]
+[ActiveJob] [AddUserJob] [c1bf345f-4e9e-4f3e-9cbd-3c8b3b73b146]   ↳ app/jobs/add_user_job.rb:13
+[ActiveJob] [AddUserJob] [c1bf345f-4e9e-4f3e-9cbd-3c8b3b73b146]   [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+[ActiveJob] [AddUserJob] [c1bf345f-4e9e-4f3e-9cbd-3c8b3b73b146]   ↳ app/jobs/add_user_job.rb:13
+[ActiveJob] [AddUserJob] [c1bf345f-4e9e-4f3e-9cbd-3c8b3b73b146] Performed AddUserJob (Job ID: c1bf345f-4e9e-4f3e-9cbd-3c8b3b73b146) from Async(default) in 10206.26ms
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Destroy (0.5ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 1]]
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveStorage::Attachment Load (0.5ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 1], ["record_type", "User"], ["name", "avatar"], ["LIMIT", 1]]
+  [1m[36mActiveStorage::Blob Load (0.5ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActiveStorage::Attachment Destroy (0.8ms)[0m  [1m[31mDELETE FROM "active_storage_attachments" WHERE "active_storage_attachments"."id" = $1[0m  [["id", 1]]
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+[ActiveJob] Enqueued ActiveStorage::PurgeJob (Job ID: c26fbb03-a8a1-46b8-8a88-7991250f6975) to Async(default) with arguments: #<GlobalID:0x000055c0970d0478 @uri=#<URI::GID gid://desafio/ActiveStorage::Blob/1>>
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Destroy (0.6ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 2]]
+  [1m[35m (0.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveStorage::Attachment Load (2.3ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 2], ["record_type", "User"], ["name", "avatar"], ["LIMIT", 1]]
+  [1m[36mActiveStorage::Blob Load (0.4ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActiveStorage::Attachment Destroy (0.4ms)[0m  [1m[31mDELETE FROM "active_storage_attachments" WHERE "active_storage_attachments"."id" = $1[0m  [["id", 2]]
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+[ActiveJob] Enqueued ActiveStorage::PurgeJob (Job ID: 076985c0-fc89-4a68-91fb-40beacd70c76) to Async(default) with arguments: #<GlobalID:0x000055c097028a70 @uri=#<URI::GID gid://desafio/ActiveStorage::Blob/2>>
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Destroy (0.2ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 3]]
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveStorage::Attachment Load (0.2ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 3], ["record_type", "User"], ["name", "avatar"], ["LIMIT", 1]]
+  [1m[36mActiveStorage::Blob Load (0.2ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActiveStorage::Attachment Destroy (0.2ms)[0m  [1m[31mDELETE FROM "active_storage_attachments" WHERE "active_storage_attachments"."id" = $1[0m  [["id", 3]]
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+[ActiveJob] Enqueued ActiveStorage::PurgeJob (Job ID: d5f5a727-f37e-4189-bbd2-ae08ffc3f690) to Async(default) with arguments: #<GlobalID:0x000055c096fd9420 @uri=#<URI::GID gid://desafio/ActiveStorage::Blob/3>>
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Destroy (0.5ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 4]]
+  [1m[35m (2.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveStorage::Attachment Load (0.6ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 4], ["record_type", "User"], ["name", "avatar"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Destroy (0.3ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 5]]
+  [1m[35m (8244.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (15399.5ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mActiveStorage::Blob Load (0.4ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mActiveStorage::Blob Load (6.2ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+[ActiveJob] [ActiveStorage::PurgeJob] [c26fbb03-a8a1-46b8-8a88-7991250f6975] Performing ActiveStorage::PurgeJob (Job ID: c26fbb03-a8a1-46b8-8a88-7991250f6975) from Async(default) with arguments: #<GlobalID:0x00007fa3e4470998 @uri=#<URI::GID gid://desafio/ActiveStorage::Blob/1>>
+[ActiveJob] [ActiveStorage::PurgeJob] [076985c0-fc89-4a68-91fb-40beacd70c76] Performing ActiveStorage::PurgeJob (Job ID: 076985c0-fc89-4a68-91fb-40beacd70c76) from Async(default) with arguments: #<GlobalID:0x00007fa3e446fc78 @uri=#<URI::GID gid://desafio/ActiveStorage::Blob/2>>
+[ActiveJob] [ActiveStorage::PurgeJob] [076985c0-fc89-4a68-91fb-40beacd70c76]   [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+[ActiveJob] [ActiveStorage::PurgeJob] [c26fbb03-a8a1-46b8-8a88-7991250f6975]   [1m[35m (1.9ms)[0m  [1m[35mBEGIN[0m
+[ActiveJob] [ActiveStorage::PurgeJob] [076985c0-fc89-4a68-91fb-40beacd70c76]   [1m[36mActiveStorage::Attachment Exists (1.1ms)[0m  [1m[34mSELECT  1 AS one FROM "active_storage_attachments" WHERE "active_storage_attachments"."blob_id" = $1 LIMIT $2[0m  [["blob_id", 2], ["LIMIT", 1]]
+[ActiveJob] [ActiveStorage::PurgeJob] [c26fbb03-a8a1-46b8-8a88-7991250f6975]   [1m[36mActiveStorage::Attachment Exists (0.6ms)[0m  [1m[34mSELECT  1 AS one FROM "active_storage_attachments" WHERE "active_storage_attachments"."blob_id" = $1 LIMIT $2[0m  [["blob_id", 1], ["LIMIT", 1]]
+[ActiveJob] [ActiveStorage::PurgeJob] [c26fbb03-a8a1-46b8-8a88-7991250f6975]   [1m[36mActiveStorage::Blob Destroy (0.7ms)[0m  [1m[31mDELETE FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1[0m  [["id", 1]]
+[ActiveJob] [ActiveStorage::PurgeJob] [076985c0-fc89-4a68-91fb-40beacd70c76]   [1m[36mActiveStorage::Blob Destroy (1.9ms)[0m  [1m[31mDELETE FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1[0m  [["id", 2]]
+[ActiveJob] [ActiveStorage::PurgeJob] [c26fbb03-a8a1-46b8-8a88-7991250f6975]   [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+[ActiveJob] [ActiveStorage::PurgeJob] [076985c0-fc89-4a68-91fb-40beacd70c76]   [1m[35m (4.1ms)[0m  [1m[35mCOMMIT[0m
+[ActiveJob] [ActiveStorage::PurgeJob] [c26fbb03-a8a1-46b8-8a88-7991250f6975]   [1m[36mActiveStorage::Attachment Load (0.5ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 1], ["record_type", "ActiveStorage::Blob"], ["name", "preview_image"], ["LIMIT", 1]]
+[ActiveJob] [ActiveStorage::PurgeJob] [c26fbb03-a8a1-46b8-8a88-7991250f6975] [36m  Disk Storage (0.1ms) [0m[31mDeleted file from key: VGR36FhRwbqhgz8NtVUW9RbM[0m
+[ActiveJob] [ActiveStorage::PurgeJob] [c26fbb03-a8a1-46b8-8a88-7991250f6975] [36m  Disk Storage (0.0ms) [0m[31mDeleted files by key prefix: variants/VGR36FhRwbqhgz8NtVUW9RbM/[0m
+[ActiveJob] [ActiveStorage::PurgeJob] [c26fbb03-a8a1-46b8-8a88-7991250f6975] Performed ActiveStorage::PurgeJob (Job ID: c26fbb03-a8a1-46b8-8a88-7991250f6975) from Async(default) in 25.51ms
+[ActiveJob] [ActiveStorage::PurgeJob] [076985c0-fc89-4a68-91fb-40beacd70c76]   [1m[36mActiveStorage::Attachment Load (2.8ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 2], ["record_type", "ActiveStorage::Blob"], ["name", "preview_image"], ["LIMIT", 1]]
+  [1m[36mActiveStorage::Blob Load (0.5ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+[ActiveJob] [ActiveStorage::PurgeJob] [d5f5a727-f37e-4189-bbd2-ae08ffc3f690] Performing ActiveStorage::PurgeJob (Job ID: d5f5a727-f37e-4189-bbd2-ae08ffc3f690) from Async(default) with arguments: #<GlobalID:0x00007fa3e43c57f0 @uri=#<URI::GID gid://desafio/ActiveStorage::Blob/3>>
+[ActiveJob] [ActiveStorage::PurgeJob] [d5f5a727-f37e-4189-bbd2-ae08ffc3f690]   [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+[ActiveJob] [ActiveStorage::PurgeJob] [076985c0-fc89-4a68-91fb-40beacd70c76] [36m  Disk Storage (2.7ms) [0m[31mDeleted file from key: hf3oitjDmHnbiTdYfYoALdxB[0m
+[ActiveJob] [ActiveStorage::PurgeJob] [076985c0-fc89-4a68-91fb-40beacd70c76] [36m  Disk Storage (0.0ms) [0m[31mDeleted files by key prefix: variants/hf3oitjDmHnbiTdYfYoALdxB/[0m
+[ActiveJob] [ActiveStorage::PurgeJob] [076985c0-fc89-4a68-91fb-40beacd70c76] Performed ActiveStorage::PurgeJob (Job ID: 076985c0-fc89-4a68-91fb-40beacd70c76) from Async(default) in 28.85ms
+[ActiveJob] [ActiveStorage::PurgeJob] [d5f5a727-f37e-4189-bbd2-ae08ffc3f690]   [1m[36mActiveStorage::Attachment Exists (4.2ms)[0m  [1m[34mSELECT  1 AS one FROM "active_storage_attachments" WHERE "active_storage_attachments"."blob_id" = $1 LIMIT $2[0m  [["blob_id", 3], ["LIMIT", 1]]
+[ActiveJob] [ActiveStorage::PurgeJob] [d5f5a727-f37e-4189-bbd2-ae08ffc3f690]   [1m[36mActiveStorage::Blob Destroy (0.5ms)[0m  [1m[31mDELETE FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1[0m  [["id", 3]]
+[ActiveJob] [ActiveStorage::PurgeJob] [d5f5a727-f37e-4189-bbd2-ae08ffc3f690]   [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+[ActiveJob] [ActiveStorage::PurgeJob] [d5f5a727-f37e-4189-bbd2-ae08ffc3f690]   [1m[36mActiveStorage::Attachment Load (0.2ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 3], ["record_type", "ActiveStorage::Blob"], ["name", "preview_image"], ["LIMIT", 1]]
+[ActiveJob] [ActiveStorage::PurgeJob] [d5f5a727-f37e-4189-bbd2-ae08ffc3f690] [36m  Disk Storage (0.3ms) [0m[31mDeleted file from key: Ft9oZjkDAdbPf8ewBhEsChbB[0m
+[ActiveJob] [ActiveStorage::PurgeJob] [d5f5a727-f37e-4189-bbd2-ae08ffc3f690] [36m  Disk Storage (0.0ms) [0m[31mDeleted files by key prefix: variants/Ft9oZjkDAdbPf8ewBhEsChbB/[0m
+[ActiveJob] [ActiveStorage::PurgeJob] [d5f5a727-f37e-4189-bbd2-ae08ffc3f690] Performed ActiveStorage::PurgeJob (Job ID: d5f5a727-f37e-4189-bbd2-ae08ffc3f690) from Async(default) in 9.41ms
+Started DELETE "/users/1" for 127.0.0.1 at 2020-08-25 15:48:45 -0300
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/bs-1/.rvm/gems/ruby-2.5.7/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+Processing by UsersController#destroy as HTML
+  Parameters: {"authenticity_token"=>"Bzrod05RQno+IWeZEDSdWQB/PUYqwSRvNnO6DzTgV2OrahrwwxqizrURgb5xNwEirpK5cAzP5B3fqngGkfoyAw==", "id"=>"1"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:70
+Completed 404 Not Found in 19ms (ActiveRecord: 5.3ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find User with 'id'=1):
+  
+app/controllers/users_controller.rb:70:in `set_user'
+Started GET "/users" for 127.0.0.1 at 2020-08-25 15:48:57 -0300
+Processing by UsersController#index as HTML
+[ActiveJob] Enqueued AddUserJob (Job ID: 9b0798db-d88c-418c-9875-a7c7eb1248b4) to Async(default)
+[ActiveJob] [AddUserJob] [9b0798db-d88c-418c-9875-a7c7eb1248b4] Performing AddUserJob (Job ID: 9b0798db-d88c-418c-9875-a7c7eb1248b4) from Async(default)
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (7.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:16
+  Rendered users/index.html.erb within layouts/application (23.0ms)
+Completed 200 OK in 308ms (Views: 270.6ms | ActiveRecord: 7.4ms)
+
+
+[ActiveJob] [AddUserJob] [9b0798db-d88c-418c-9875-a7c7eb1248b4]   [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+[ActiveJob] [AddUserJob] [9b0798db-d88c-418c-9875-a7c7eb1248b4]   ↳ app/jobs/add_user_job.rb:13
+[ActiveJob] [AddUserJob] [9b0798db-d88c-418c-9875-a7c7eb1248b4]   [1m[36mUser Create (3.2ms)[0m  [1m[32mINSERT INTO "users" ("nome", "email", "idade", "created_at", "updated_at", "tempo") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["nome", "Henrique"], ["email", "henrique@teste.com"], ["idade", 81], ["created_at", "2020-08-25 18:48:57.805220"], ["updated_at", "2020-08-25 18:48:57.805220"], ["tempo", "17:48:57.793110"]]
+[ActiveJob] [AddUserJob] [9b0798db-d88c-418c-9875-a7c7eb1248b4]   ↳ app/jobs/add_user_job.rb:13
+[ActiveJob] [AddUserJob] [9b0798db-d88c-418c-9875-a7c7eb1248b4]   [1m[35m (3.2ms)[0m  [1m[35mCOMMIT[0m
+[ActiveJob] [AddUserJob] [9b0798db-d88c-418c-9875-a7c7eb1248b4]   ↳ app/jobs/add_user_job.rb:13
+[ActiveJob] [AddUserJob] [9b0798db-d88c-418c-9875-a7c7eb1248b4]   [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+[ActiveJob] [AddUserJob] [9b0798db-d88c-418c-9875-a7c7eb1248b4]   ↳ app/jobs/add_user_job.rb:13
+[ActiveJob] [AddUserJob] [9b0798db-d88c-418c-9875-a7c7eb1248b4]   [1m[36mUser Create (1.1ms)[0m  [1m[32mINSERT INTO "users" ("nome", "email", "idade", "created_at", "updated_at", "tempo") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["nome", "Henrique"], ["email", "henrique@teste.com"], ["idade", 30], ["created_at", "2020-08-25 18:49:00.817675"], ["updated_at", "2020-08-25 18:49:00.817675"], ["tempo", "17:49:00.816976"]]
+[ActiveJob] [AddUserJob] [9b0798db-d88c-418c-9875-a7c7eb1248b4]   ↳ app/jobs/add_user_job.rb:13
+[ActiveJob] [AddUserJob] [9b0798db-d88c-418c-9875-a7c7eb1248b4]   [1m[35m (1.6ms)[0m  [1m[35mCOMMIT[0m
+[ActiveJob] [AddUserJob] [9b0798db-d88c-418c-9875-a7c7eb1248b4]   ↳ app/jobs/add_user_job.rb:13
+[ActiveJob] [AddUserJob] [9b0798db-d88c-418c-9875-a7c7eb1248b4]   [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+[ActiveJob] [AddUserJob] [9b0798db-d88c-418c-9875-a7c7eb1248b4]   ↳ app/jobs/add_user_job.rb:13
+[ActiveJob] [AddUserJob] [9b0798db-d88c-418c-9875-a7c7eb1248b4]   [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("nome", "email", "idade", "created_at", "updated_at", "tempo") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["nome", "Felipe"], ["email", "tiago@teste.com"], ["idade", 74], ["created_at", "2020-08-25 18:49:03.830551"], ["updated_at", "2020-08-25 18:49:03.830551"], ["tempo", "17:49:03.829856"]]
+[ActiveJob] [AddUserJob] [9b0798db-d88c-418c-9875-a7c7eb1248b4]   ↳ app/jobs/add_user_job.rb:13
+[ActiveJob] [AddUserJob] [9b0798db-d88c-418c-9875-a7c7eb1248b4]   [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+[ActiveJob] [AddUserJob] [9b0798db-d88c-418c-9875-a7c7eb1248b4]   ↳ app/jobs/add_user_job.rb:13
+[ActiveJob] [AddUserJob] [9b0798db-d88c-418c-9875-a7c7eb1248b4] Performed AddUserJob (Job ID: 9b0798db-d88c-418c-9875-a7c7eb1248b4) from Async(default) in 8706.33ms
+  [1m[36mUser Destroy (1.2ms)[0m  [1m[31mDELETE FROM "users"[0m
+Started GET "/users" for 127.0.0.1 at 2020-08-25 15:49:29 -0300
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/bs-1/.rvm/gems/ruby-2.5.7/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+Processing by UsersController#index as HTML
+[ActiveJob] Enqueued AddUserJob (Job ID: f6bdef04-a1e0-4bee-a288-c425a65f9f92) to Async(default)
+[ActiveJob] [AddUserJob] [f6bdef04-a1e0-4bee-a288-c425a65f9f92] Performing AddUserJob (Job ID: f6bdef04-a1e0-4bee-a288-c425a65f9f92) from Async(default)
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:16
+  Rendered users/index.html.erb within layouts/application (18.7ms)
+Completed 200 OK in 355ms (Views: 330.6ms | ActiveRecord: 1.0ms)
+
+
+[ActiveJob] [AddUserJob] [f6bdef04-a1e0-4bee-a288-c425a65f9f92]   [1m[35m (3.3ms)[0m  [1m[35mBEGIN[0m
+[ActiveJob] [AddUserJob] [f6bdef04-a1e0-4bee-a288-c425a65f9f92]   ↳ app/jobs/add_user_job.rb:13
+[ActiveJob] [AddUserJob] [f6bdef04-a1e0-4bee-a288-c425a65f9f92]   [1m[36mUser Create (2.9ms)[0m  [1m[32mINSERT INTO "users" ("nome", "email", "idade", "created_at", "updated_at", "tempo") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["nome", "Tiago"], ["email", "felipe@teste.com"], ["idade", 60], ["created_at", "2020-08-25 18:49:29.895447"], ["updated_at", "2020-08-25 18:49:29.895447"], ["tempo", "17:49:29.891278"]]
+[ActiveJob] [AddUserJob] [f6bdef04-a1e0-4bee-a288-c425a65f9f92]   ↳ app/jobs/add_user_job.rb:13
+[ActiveJob] [AddUserJob] [f6bdef04-a1e0-4bee-a288-c425a65f9f92]   [1m[35m (2.6ms)[0m  [1m[35mCOMMIT[0m
+[ActiveJob] [AddUserJob] [f6bdef04-a1e0-4bee-a288-c425a65f9f92]   ↳ app/jobs/add_user_job.rb:13
+[ActiveJob] [AddUserJob] [f6bdef04-a1e0-4bee-a288-c425a65f9f92]   [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+[ActiveJob] [AddUserJob] [f6bdef04-a1e0-4bee-a288-c425a65f9f92]   ↳ app/jobs/add_user_job.rb:13
+[ActiveJob] [AddUserJob] [f6bdef04-a1e0-4bee-a288-c425a65f9f92]   [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("nome", "email", "idade", "created_at", "updated_at", "tempo") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["nome", "Tiago"], ["email", "felipe@teste.com"], ["idade", 24], ["created_at", "2020-08-25 18:49:32.906217"], ["updated_at", "2020-08-25 18:49:32.906217"], ["tempo", "17:49:32.905420"]]
+[ActiveJob] [AddUserJob] [f6bdef04-a1e0-4bee-a288-c425a65f9f92]   ↳ app/jobs/add_user_job.rb:13
+[ActiveJob] [AddUserJob] [f6bdef04-a1e0-4bee-a288-c425a65f9f92]   [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+[ActiveJob] [AddUserJob] [f6bdef04-a1e0-4bee-a288-c425a65f9f92]   ↳ app/jobs/add_user_job.rb:13
+[ActiveJob] [AddUserJob] [f6bdef04-a1e0-4bee-a288-c425a65f9f92]   [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+[ActiveJob] [AddUserJob] [f6bdef04-a1e0-4bee-a288-c425a65f9f92]   ↳ app/jobs/add_user_job.rb:13
+[ActiveJob] [AddUserJob] [f6bdef04-a1e0-4bee-a288-c425a65f9f92]   [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("nome", "email", "idade", "created_at", "updated_at", "tempo") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["nome", "Henrique"], ["email", "henrique@teste.com"], ["idade", 88], ["created_at", "2020-08-25 18:49:35.911199"], ["updated_at", "2020-08-25 18:49:35.911199"], ["tempo", "17:49:35.910524"]]
+[ActiveJob] [AddUserJob] [f6bdef04-a1e0-4bee-a288-c425a65f9f92]   ↳ app/jobs/add_user_job.rb:13
+[ActiveJob] [AddUserJob] [f6bdef04-a1e0-4bee-a288-c425a65f9f92]   [1m[35m (0.9ms)[0m  [1m[35mCOMMIT[0m
+[ActiveJob] [AddUserJob] [f6bdef04-a1e0-4bee-a288-c425a65f9f92]   ↳ app/jobs/add_user_job.rb:13
+Started GET "/users" for 127.0.0.1 at 2020-08-25 15:49:38 -0300
+Processing by UsersController#index as HTML
+[ActiveJob] Enqueued AddUserJob (Job ID: f4cf0f3a-84c3-4117-8983-493f8c64d8b1) to Async(default)
+  Rendering users/index.html.erb within layouts/application
+[ActiveJob] [AddUserJob] [f4cf0f3a-84c3-4117-8983-493f8c64d8b1] Performing AddUserJob (Job ID: f4cf0f3a-84c3-4117-8983-493f8c64d8b1) from Async(default)
+  [1m[36mUser Load (4.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:16
+[ActiveJob] [AddUserJob] [f4cf0f3a-84c3-4117-8983-493f8c64d8b1]   [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  Rendered users/index.html.erb within layouts/application (15.9ms)
+[ActiveJob] [AddUserJob] [f4cf0f3a-84c3-4117-8983-493f8c64d8b1]   ↳ app/jobs/add_user_job.rb:13
+[ActiveJob] [AddUserJob] [f4cf0f3a-84c3-4117-8983-493f8c64d8b1]   [1m[36mUser Create (0.9ms)[0m  [1m[32mINSERT INTO "users" ("nome", "email", "idade", "created_at", "updated_at", "tempo") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["nome", "Henrique"], ["email", "henrique@teste.com"], ["idade", 63], ["created_at", "2020-08-25 18:49:38.326434"], ["updated_at", "2020-08-25 18:49:38.326434"], ["tempo", "17:49:38.309310"]]
+[ActiveJob] [AddUserJob] [f4cf0f3a-84c3-4117-8983-493f8c64d8b1]   ↳ app/jobs/add_user_job.rb:13
+[ActiveJob] [AddUserJob] [f4cf0f3a-84c3-4117-8983-493f8c64d8b1]   [1m[35m (0.9ms)[0m  [1m[35mCOMMIT[0m
+[ActiveJob] [AddUserJob] [f4cf0f3a-84c3-4117-8983-493f8c64d8b1]   ↳ app/jobs/add_user_job.rb:13
+Completed 200 OK in 72ms (Views: 66.2ms | ActiveRecord: 4.2ms)
+
+
+[ActiveJob] [AddUserJob] [f6bdef04-a1e0-4bee-a288-c425a65f9f92]   [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+[ActiveJob] [AddUserJob] [f6bdef04-a1e0-4bee-a288-c425a65f9f92]   ↳ app/jobs/add_user_job.rb:13
+[ActiveJob] [AddUserJob] [f6bdef04-a1e0-4bee-a288-c425a65f9f92]   [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("nome", "email", "idade", "created_at", "updated_at", "tempo") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["nome", "Tiago"], ["email", "henrique@teste.com"], ["idade", 28], ["created_at", "2020-08-25 18:49:38.916732"], ["updated_at", "2020-08-25 18:49:38.916732"], ["tempo", "17:49:38.916043"]]
+[ActiveJob] [AddUserJob] [f6bdef04-a1e0-4bee-a288-c425a65f9f92]   ↳ app/jobs/add_user_job.rb:13
+[ActiveJob] [AddUserJob] [f6bdef04-a1e0-4bee-a288-c425a65f9f92]   [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+[ActiveJob] [AddUserJob] [f6bdef04-a1e0-4bee-a288-c425a65f9f92]   ↳ app/jobs/add_user_job.rb:13
+[ActiveJob] [AddUserJob] [f4cf0f3a-84c3-4117-8983-493f8c64d8b1]   [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+[ActiveJob] [AddUserJob] [f4cf0f3a-84c3-4117-8983-493f8c64d8b1]   ↳ app/jobs/add_user_job.rb:13
+[ActiveJob] [AddUserJob] [f4cf0f3a-84c3-4117-8983-493f8c64d8b1]   [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("nome", "email", "idade", "created_at", "updated_at", "tempo") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["nome", "Tiago"], ["email", "felipe@teste.com"], ["idade", 46], ["created_at", "2020-08-25 18:49:41.339037"], ["updated_at", "2020-08-25 18:49:41.339037"], ["tempo", "17:49:41.338335"]]
+[ActiveJob] [AddUserJob] [f4cf0f3a-84c3-4117-8983-493f8c64d8b1]   ↳ app/jobs/add_user_job.rb:13
+[ActiveJob] [AddUserJob] [f4cf0f3a-84c3-4117-8983-493f8c64d8b1]   [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+[ActiveJob] [AddUserJob] [f4cf0f3a-84c3-4117-8983-493f8c64d8b1]   ↳ app/jobs/add_user_job.rb:13
+[ActiveJob] [AddUserJob] [f6bdef04-a1e0-4bee-a288-c425a65f9f92]   [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+[ActiveJob] [AddUserJob] [f6bdef04-a1e0-4bee-a288-c425a65f9f92]   ↳ app/jobs/add_user_job.rb:13
+[ActiveJob] [AddUserJob] [f6bdef04-a1e0-4bee-a288-c425a65f9f92]   [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("nome", "email", "idade", "created_at", "updated_at", "tempo") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["nome", "Henrique"], ["email", "henrique@teste.com"], ["idade", 49], ["created_at", "2020-08-25 18:49:41.921878"], ["updated_at", "2020-08-25 18:49:41.921878"], ["tempo", "17:49:41.921198"]]
+[ActiveJob] [AddUserJob] [f6bdef04-a1e0-4bee-a288-c425a65f9f92]   ↳ app/jobs/add_user_job.rb:13
+[ActiveJob] [AddUserJob] [f6bdef04-a1e0-4bee-a288-c425a65f9f92]   [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+[ActiveJob] [AddUserJob] [f6bdef04-a1e0-4bee-a288-c425a65f9f92]   ↳ app/jobs/add_user_job.rb:13
+[ActiveJob] [AddUserJob] [f4cf0f3a-84c3-4117-8983-493f8c64d8b1]   [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+[ActiveJob] [AddUserJob] [f4cf0f3a-84c3-4117-8983-493f8c64d8b1]   ↳ app/jobs/add_user_job.rb:13
+[ActiveJob] [AddUserJob] [f4cf0f3a-84c3-4117-8983-493f8c64d8b1]   [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("nome", "email", "idade", "created_at", "updated_at", "tempo") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["nome", "Henrique"], ["email", "felipe@teste.com"], ["idade", 61], ["created_at", "2020-08-25 18:49:44.344690"], ["updated_at", "2020-08-25 18:49:44.344690"], ["tempo", "17:49:44.343973"]]
+[ActiveJob] [AddUserJob] [f4cf0f3a-84c3-4117-8983-493f8c64d8b1]   ↳ app/jobs/add_user_job.rb:13
+[ActiveJob] [AddUserJob] [f4cf0f3a-84c3-4117-8983-493f8c64d8b1]   [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+[ActiveJob] [AddUserJob] [f4cf0f3a-84c3-4117-8983-493f8c64d8b1]   ↳ app/jobs/add_user_job.rb:13
+[ActiveJob] [AddUserJob] [f6bdef04-a1e0-4bee-a288-c425a65f9f92]   [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+[ActiveJob] [AddUserJob] [f6bdef04-a1e0-4bee-a288-c425a65f9f92]   ↳ app/jobs/add_user_job.rb:13
+[ActiveJob] [AddUserJob] [f6bdef04-a1e0-4bee-a288-c425a65f9f92]   [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("nome", "email", "idade", "created_at", "updated_at", "tempo") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["nome", "Tiago"], ["email", "tiago@teste.com"], ["idade", 99], ["created_at", "2020-08-25 18:49:44.926530"], ["updated_at", "2020-08-25 18:49:44.926530"], ["tempo", "17:49:44.925836"]]
+[ActiveJob] [AddUserJob] [f6bdef04-a1e0-4bee-a288-c425a65f9f92]   ↳ app/jobs/add_user_job.rb:13
+[ActiveJob] [AddUserJob] [f6bdef04-a1e0-4bee-a288-c425a65f9f92]   [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+[ActiveJob] [AddUserJob] [f6bdef04-a1e0-4bee-a288-c425a65f9f92]   ↳ app/jobs/add_user_job.rb:13
+[ActiveJob] [AddUserJob] [f4cf0f3a-84c3-4117-8983-493f8c64d8b1]   [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+[ActiveJob] [AddUserJob] [f4cf0f3a-84c3-4117-8983-493f8c64d8b1]   ↳ app/jobs/add_user_job.rb:13
+[ActiveJob] [AddUserJob] [f4cf0f3a-84c3-4117-8983-493f8c64d8b1]   [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("nome", "email", "idade", "created_at", "updated_at", "tempo") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["nome", "Tiago"], ["email", "henrique@teste.com"], ["idade", 14], ["created_at", "2020-08-25 18:49:47.349461"], ["updated_at", "2020-08-25 18:49:47.349461"], ["tempo", "17:49:47.348730"]]
+[ActiveJob] [AddUserJob] [f4cf0f3a-84c3-4117-8983-493f8c64d8b1]   ↳ app/jobs/add_user_job.rb:13
+[ActiveJob] [AddUserJob] [f4cf0f3a-84c3-4117-8983-493f8c64d8b1]   [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+[ActiveJob] [AddUserJob] [f4cf0f3a-84c3-4117-8983-493f8c64d8b1]   ↳ app/jobs/add_user_job.rb:13
+[ActiveJob] [AddUserJob] [f6bdef04-a1e0-4bee-a288-c425a65f9f92]   [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+[ActiveJob] [AddUserJob] [f6bdef04-a1e0-4bee-a288-c425a65f9f92]   ↳ app/jobs/add_user_job.rb:13
+[ActiveJob] [AddUserJob] [f6bdef04-a1e0-4bee-a288-c425a65f9f92]   [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("nome", "email", "idade", "created_at", "updated_at", "tempo") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["nome", "Tiago"], ["email", "felipe@teste.com"], ["idade", 47], ["created_at", "2020-08-25 18:49:47.931723"], ["updated_at", "2020-08-25 18:49:47.931723"], ["tempo", "17:49:47.931010"]]
+[ActiveJob] [AddUserJob] [f6bdef04-a1e0-4bee-a288-c425a65f9f92]   ↳ app/jobs/add_user_job.rb:13
+[ActiveJob] [AddUserJob] [f6bdef04-a1e0-4bee-a288-c425a65f9f92]   [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+[ActiveJob] [AddUserJob] [f6bdef04-a1e0-4bee-a288-c425a65f9f92]   ↳ app/jobs/add_user_job.rb:13
+[ActiveJob] [AddUserJob] [f4cf0f3a-84c3-4117-8983-493f8c64d8b1]   [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+[ActiveJob] [AddUserJob] [f4cf0f3a-84c3-4117-8983-493f8c64d8b1]   ↳ app/jobs/add_user_job.rb:13
+[ActiveJob] [AddUserJob] [f4cf0f3a-84c3-4117-8983-493f8c64d8b1]   [1m[36mUser Create (0.8ms)[0m  [1m[32mINSERT INTO "users" ("nome", "email", "idade", "created_at", "updated_at", "tempo") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["nome", "Felipe"], ["email", "felipe@teste.com"], ["idade", 71], ["created_at", "2020-08-25 18:49:50.354966"], ["updated_at", "2020-08-25 18:49:50.354966"], ["tempo", "17:49:50.353956"]]
+[ActiveJob] [AddUserJob] [f4cf0f3a-84c3-4117-8983-493f8c64d8b1]   ↳ app/jobs/add_user_job.rb:13
+[ActiveJob] [AddUserJob] [f4cf0f3a-84c3-4117-8983-493f8c64d8b1]   [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+[ActiveJob] [AddUserJob] [f4cf0f3a-84c3-4117-8983-493f8c64d8b1]   ↳ app/jobs/add_user_job.rb:13
+[ActiveJob] [AddUserJob] [f6bdef04-a1e0-4bee-a288-c425a65f9f92]   [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+[ActiveJob] [AddUserJob] [f6bdef04-a1e0-4bee-a288-c425a65f9f92]   ↳ app/jobs/add_user_job.rb:13
+[ActiveJob] [AddUserJob] [f6bdef04-a1e0-4bee-a288-c425a65f9f92]   [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("nome", "email", "idade", "created_at", "updated_at", "tempo") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["nome", "Henrique"], ["email", "henrique@teste.com"], ["idade", 44], ["created_at", "2020-08-25 18:49:50.936991"], ["updated_at", "2020-08-25 18:49:50.936991"], ["tempo", "17:49:50.936296"]]
+[ActiveJob] [AddUserJob] [f6bdef04-a1e0-4bee-a288-c425a65f9f92]   ↳ app/jobs/add_user_job.rb:13
+[ActiveJob] [AddUserJob] [f6bdef04-a1e0-4bee-a288-c425a65f9f92]   [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+[ActiveJob] [AddUserJob] [f6bdef04-a1e0-4bee-a288-c425a65f9f92]   ↳ app/jobs/add_user_job.rb:13
+[ActiveJob] [AddUserJob] [f4cf0f3a-84c3-4117-8983-493f8c64d8b1]   [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+[ActiveJob] [AddUserJob] [f4cf0f3a-84c3-4117-8983-493f8c64d8b1]   ↳ app/jobs/add_user_job.rb:13
+[ActiveJob] [AddUserJob] [f4cf0f3a-84c3-4117-8983-493f8c64d8b1]   [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("nome", "email", "idade", "created_at", "updated_at", "tempo") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["nome", "Tiago"], ["email", "felipe@teste.com"], ["idade", 40], ["created_at", "2020-08-25 18:49:53.360113"], ["updated_at", "2020-08-25 18:49:53.360113"], ["tempo", "17:49:53.359384"]]
+[ActiveJob] [AddUserJob] [f4cf0f3a-84c3-4117-8983-493f8c64d8b1]   ↳ app/jobs/add_user_job.rb:13
+[ActiveJob] [AddUserJob] [f4cf0f3a-84c3-4117-8983-493f8c64d8b1]   [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+[ActiveJob] [AddUserJob] [f4cf0f3a-84c3-4117-8983-493f8c64d8b1]   ↳ app/jobs/add_user_job.rb:13
+[ActiveJob] [AddUserJob] [f6bdef04-a1e0-4bee-a288-c425a65f9f92]   [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+[ActiveJob] [AddUserJob] [f6bdef04-a1e0-4bee-a288-c425a65f9f92]   ↳ app/jobs/add_user_job.rb:13
+[ActiveJob] [AddUserJob] [f6bdef04-a1e0-4bee-a288-c425a65f9f92]   [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("nome", "email", "idade", "created_at", "updated_at", "tempo") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["nome", "Henrique"], ["email", "tiago@teste.com"], ["idade", 67], ["created_at", "2020-08-25 18:49:53.941745"], ["updated_at", "2020-08-25 18:49:53.941745"], ["tempo", "17:49:53.940976"]]
+[ActiveJob] [AddUserJob] [f6bdef04-a1e0-4bee-a288-c425a65f9f92]   ↳ app/jobs/add_user_job.rb:13
+[ActiveJob] [AddUserJob] [f6bdef04-a1e0-4bee-a288-c425a65f9f92]   [1m[35m (0.9ms)[0m  [1m[35mCOMMIT[0m
+[ActiveJob] [AddUserJob] [f6bdef04-a1e0-4bee-a288-c425a65f9f92]   ↳ app/jobs/add_user_job.rb:13
+[ActiveJob] [AddUserJob] [f4cf0f3a-84c3-4117-8983-493f8c64d8b1]   [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+[ActiveJob] [AddUserJob] [f4cf0f3a-84c3-4117-8983-493f8c64d8b1]   ↳ app/jobs/add_user_job.rb:13
+[ActiveJob] [AddUserJob] [f4cf0f3a-84c3-4117-8983-493f8c64d8b1]   [1m[36mUser Create (0.8ms)[0m  [1m[32mINSERT INTO "users" ("nome", "email", "idade", "created_at", "updated_at", "tempo") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["nome", "Tiago"], ["email", "tiago@teste.com"], ["idade", 37], ["created_at", "2020-08-25 18:49:56.365652"], ["updated_at", "2020-08-25 18:49:56.365652"], ["tempo", "17:49:56.364910"]]
+[ActiveJob] [AddUserJob] [f4cf0f3a-84c3-4117-8983-493f8c64d8b1]   ↳ app/jobs/add_user_job.rb:13
+[ActiveJob] [AddUserJob] [f4cf0f3a-84c3-4117-8983-493f8c64d8b1]   [1m[35m (0.9ms)[0m  [1m[35mCOMMIT[0m
+[ActiveJob] [AddUserJob] [f4cf0f3a-84c3-4117-8983-493f8c64d8b1]   ↳ app/jobs/add_user_job.rb:13
+[ActiveJob] [AddUserJob] [f6bdef04-a1e0-4bee-a288-c425a65f9f92]   [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+[ActiveJob] [AddUserJob] [f6bdef04-a1e0-4bee-a288-c425a65f9f92]   ↳ app/jobs/add_user_job.rb:13
+[ActiveJob] [AddUserJob] [f6bdef04-a1e0-4bee-a288-c425a65f9f92]   [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("nome", "email", "idade", "created_at", "updated_at", "tempo") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["nome", "Tiago"], ["email", "felipe@teste.com"], ["idade", 35], ["created_at", "2020-08-25 18:49:56.946754"], ["updated_at", "2020-08-25 18:49:56.946754"], ["tempo", "17:49:56.946088"]]
+[ActiveJob] [AddUserJob] [f6bdef04-a1e0-4bee-a288-c425a65f9f92]   ↳ app/jobs/add_user_job.rb:13
+[ActiveJob] [AddUserJob] [f6bdef04-a1e0-4bee-a288-c425a65f9f92]   [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+[ActiveJob] [AddUserJob] [f6bdef04-a1e0-4bee-a288-c425a65f9f92]   ↳ app/jobs/add_user_job.rb:13
+[ActiveJob] [AddUserJob] [f4cf0f3a-84c3-4117-8983-493f8c64d8b1]   [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+[ActiveJob] [AddUserJob] [f4cf0f3a-84c3-4117-8983-493f8c64d8b1]   ↳ app/jobs/add_user_job.rb:13
+[ActiveJob] [AddUserJob] [f4cf0f3a-84c3-4117-8983-493f8c64d8b1]   [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("nome", "email", "idade", "created_at", "updated_at", "tempo") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["nome", "Henrique"], ["email", "tiago@teste.com"], ["idade", 13], ["created_at", "2020-08-25 18:49:59.374987"], ["updated_at", "2020-08-25 18:49:59.374987"], ["tempo", "17:49:59.374285"]]
+[ActiveJob] [AddUserJob] [f4cf0f3a-84c3-4117-8983-493f8c64d8b1]   ↳ app/jobs/add_user_job.rb:13
+[ActiveJob] [AddUserJob] [f4cf0f3a-84c3-4117-8983-493f8c64d8b1]   [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+[ActiveJob] [AddUserJob] [f4cf0f3a-84c3-4117-8983-493f8c64d8b1]   ↳ app/jobs/add_user_job.rb:13
+[ActiveJob] [AddUserJob] [f6bdef04-a1e0-4bee-a288-c425a65f9f92]   [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+[ActiveJob] [AddUserJob] [f6bdef04-a1e0-4bee-a288-c425a65f9f92]   ↳ app/jobs/add_user_job.rb:13
+[ActiveJob] [AddUserJob] [f6bdef04-a1e0-4bee-a288-c425a65f9f92]   [1m[36mUser Create (0.8ms)[0m  [1m[32mINSERT INTO "users" ("nome", "email", "idade", "created_at", "updated_at", "tempo") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["nome", "Tiago"], ["email", "henrique@teste.com"], ["idade", 75], ["created_at", "2020-08-25 18:49:59.951366"], ["updated_at", "2020-08-25 18:49:59.951366"], ["tempo", "17:49:59.950691"]]
+[ActiveJob] [AddUserJob] [f6bdef04-a1e0-4bee-a288-c425a65f9f92]   ↳ app/jobs/add_user_job.rb:13
+[ActiveJob] [AddUserJob] [f6bdef04-a1e0-4bee-a288-c425a65f9f92]   [1m[35m (4.6ms)[0m  [1m[35mCOMMIT[0m
+[ActiveJob] [AddUserJob] [f6bdef04-a1e0-4bee-a288-c425a65f9f92]   ↳ app/jobs/add_user_job.rb:13
+[ActiveJob] [AddUserJob] [f4cf0f3a-84c3-4117-8983-493f8c64d8b1]   [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+[ActiveJob] [AddUserJob] [f4cf0f3a-84c3-4117-8983-493f8c64d8b1]   ↳ app/jobs/add_user_job.rb:13
+[ActiveJob] [AddUserJob] [f4cf0f3a-84c3-4117-8983-493f8c64d8b1]   [1m[36mUser Create (0.7ms)[0m  [1m[32mINSERT INTO "users" ("nome", "email", "idade", "created_at", "updated_at", "tempo") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["nome", "Tiago"], ["email", "tiago@teste.com"], ["idade", 68], ["created_at", "2020-08-25 18:50:02.380873"], ["updated_at", "2020-08-25 18:50:02.380873"], ["tempo", "17:50:02.379831"]]
+[ActiveJob] [AddUserJob] [f4cf0f3a-84c3-4117-8983-493f8c64d8b1]   ↳ app/jobs/add_user_job.rb:13
+[ActiveJob] [AddUserJob] [f4cf0f3a-84c3-4117-8983-493f8c64d8b1]   [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+[ActiveJob] [AddUserJob] [f4cf0f3a-84c3-4117-8983-493f8c64d8b1]   ↳ app/jobs/add_user_job.rb:13
+[ActiveJob] [AddUserJob] [f6bdef04-a1e0-4bee-a288-c425a65f9f92]   [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+[ActiveJob] [AddUserJob] [f6bdef04-a1e0-4bee-a288-c425a65f9f92]   ↳ app/jobs/add_user_job.rb:13
+[ActiveJob] [AddUserJob] [f6bdef04-a1e0-4bee-a288-c425a65f9f92]   [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("nome", "email", "idade", "created_at", "updated_at", "tempo") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["nome", "Felipe"], ["email", "tiago@teste.com"], ["idade", 50], ["created_at", "2020-08-25 18:50:02.960693"], ["updated_at", "2020-08-25 18:50:02.960693"], ["tempo", "17:50:02.960028"]]
+[ActiveJob] [AddUserJob] [f6bdef04-a1e0-4bee-a288-c425a65f9f92]   ↳ app/jobs/add_user_job.rb:13
+[ActiveJob] [AddUserJob] [f6bdef04-a1e0-4bee-a288-c425a65f9f92]   [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+[ActiveJob] [AddUserJob] [f6bdef04-a1e0-4bee-a288-c425a65f9f92]   ↳ app/jobs/add_user_job.rb:13
+[ActiveJob] [AddUserJob] [f4cf0f3a-84c3-4117-8983-493f8c64d8b1]   [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+[ActiveJob] [AddUserJob] [f4cf0f3a-84c3-4117-8983-493f8c64d8b1]   ↳ app/jobs/add_user_job.rb:13
+[ActiveJob] [AddUserJob] [f4cf0f3a-84c3-4117-8983-493f8c64d8b1]   [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("nome", "email", "idade", "created_at", "updated_at", "tempo") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["nome", "Henrique"], ["email", "henrique@teste.com"], ["idade", 22], ["created_at", "2020-08-25 18:50:05.386981"], ["updated_at", "2020-08-25 18:50:05.386981"], ["tempo", "17:50:05.386206"]]
+[ActiveJob] [AddUserJob] [f4cf0f3a-84c3-4117-8983-493f8c64d8b1]   ↳ app/jobs/add_user_job.rb:13
+[ActiveJob] [AddUserJob] [f4cf0f3a-84c3-4117-8983-493f8c64d8b1]   [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+[ActiveJob] [AddUserJob] [f4cf0f3a-84c3-4117-8983-493f8c64d8b1]   ↳ app/jobs/add_user_job.rb:13
+[ActiveJob] [AddUserJob] [f6bdef04-a1e0-4bee-a288-c425a65f9f92] Performed AddUserJob (Job ID: f6bdef04-a1e0-4bee-a288-c425a65f9f92) from Async(default) in 36301.74ms
+[ActiveJob] [AddUserJob] [f4cf0f3a-84c3-4117-8983-493f8c64d8b1] Performed AddUserJob (Job ID: f4cf0f3a-84c3-4117-8983-493f8c64d8b1) from Async(default) in 27513.12ms
