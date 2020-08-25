@@ -1,0 +1,28 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Nome:</strong>
+  <%= @user.nome %>
+</p>
+
+<p>
+  <strong>Email:</strong>
+  <%= @user.email %>
+</p>
+
+<p>
+  <strong>Idade:</strong>
+  <%= @user.idade %>
+</p>
+
+<p>
+	<strong>Tempo:</strong>
+	<%= @user.tempo.strftime('%l : %M : %S') %>
+</p>
+
+<div style="width: 100px">
+  <%= image_tag(@user.avatar) %>
+</div>
+
+<%= link_to 'Edit', edit_user_path(@user) %> |
+<%= link_to 'Back', users_path %>
